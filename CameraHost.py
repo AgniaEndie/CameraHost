@@ -33,7 +33,7 @@ if __name__ == '__main__':
     IP = requests.get('https://api.ipify.org/').text
     ip_port = f'{IP}:{8080}/video_capture'
     co = requests.post(server_addr, json={
-        "name": f"foxwatch{random.randint(0,100)}",
+        "name": f"конвейер №{random.randint(0,100)}",
         "ip": ip_port,
         "uuid":str(local_uuid)
     })
